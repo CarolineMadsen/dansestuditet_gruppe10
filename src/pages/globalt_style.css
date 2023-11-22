@@ -1,0 +1,27 @@
+/* Farver */
+:root {
+  /* Tekst farver */
+  --Text-color-red: #e6243c;
+  --Text-color-black: #0a0a0a;
+  --Text-color-petroleum: #196572;
+  --Text-color-white: #ffffff;
+
+  /* Baggrundsfarver */
+  --background-color-gray: #efefef;
+  --background-color-lightblue: #e6f1f1;
+  --background-color-petroleum: #196572;
+  --background-color-red: #e6243c;
+  --background-color-teritary: #ffeeee;
+
+  /* Knap */
+  /* Baggrund */
+  --Button-primary-background-color-petroleum: #196572;
+  --Button-secondary-background-color: #ffffff;
+  --Button-primary-background-color-red: #e6243c;
+
+  --Dropshadow-red: #93323e;
+  --Dropshadow-petroleum: #29545b;
+
+  /* Streg */
+  --SeperatorLine-color-yellow: #ffe000;
+}
