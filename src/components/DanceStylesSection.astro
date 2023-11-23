@@ -6,24 +6,26 @@ import Button from "./Button.astro";
 <section id="DanceStylesSection">
   <hr />
   <div class="DanceStyle-Content">
-    <h3>Hvilket danse- og træningstyper har vi?</h3>
-    <div class="danse_navne">
-      <h1>Experimental Contemporay</h1>
-      <h1>Afro</h1>
-      <h1>House</h1>
-      <h1>Street Jazz</h1>
-      <h1>Commercial Femme</h1>
-      <h1>Hip Hop</h1>
-      <h1>Ballet</h1>
-      <h1>Moderne Dans</h1>
-      <h1>Smidighedstræning</h1>
-      <h1>Breakdance</h1>
-      <h1>Fusion Contemporary</h1>
-      <h1>Yoga</h1>
-      <h1>Waacking</h1>
-      <h1>Workshops m.m</h1>
+    <div class="text">
+      <h3>Hvilke danse- og træningstyper har vi?</h3>
+      <div class="danse_navne">
+        <h1>Experimental Contemporay</h1>
+        <h1>Afro</h1>
+        <h1>House</h1>
+        <h1>Street Jazz</h1>
+        <h1>Commercial Femme</h1>
+        <h1>Hip Hop</h1>
+        <h1>Ballet</h1>
+        <h1>Moderne Dans</h1>
+        <h1>Smidighedstræning</h1>
+        <h1>Breakdance</h1>
+        <h1>Fusion Contemporary</h1>
+        <h1>Yoga</h1>
+        <h1>Waacking</h1>
+        <h1>Workshops m.m</h1>
+      </div>
+      <h3>Vi har mere end 50 danseklasser om ugen for alle aldre og niveauer!</h3>
     </div>
-    <h3>Vi har mere end 50 danseklasser om ugen for alle aldre og niveauer!</h3>
     <div class="knap">
       <Button buttonLabel="Se underviserne her" variant="primaryPetroleum" />
     </div>
@@ -44,6 +46,7 @@ import Button from "./Button.astro";
     flex-direction: column;
     align-items: center;
     padding: 32px 0;
+    gap: 20px;
   }
   .danse_navne {
     display: flex;
@@ -51,15 +54,18 @@ import Button from "./Button.astro";
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
-    padding-top: 30px;
+    margin: 20px;
+    height: 28px;
+    /* padding-top: 30px;
     padding-bottom: 30px;
-    height: 10px;
+    height: 10px; */
   }
 
   h1 {
     font-family: DansestudietDisplay1;
     font-size: 24px;
-    line-height: 80px;
+    line-height: 28px;
+    /* line-height: 80px; */
     color: var(--Text-color-petroleum);
   }
 
@@ -83,6 +89,7 @@ import Button from "./Button.astro";
     h1 {
       font-family: DansestudietDisplay1;
       font-size: 64px;
+      line-height: normal;
       color: var(--Text-color-petroleum);
     }
 
