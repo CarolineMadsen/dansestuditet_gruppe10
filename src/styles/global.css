@@ -24,9 +24,12 @@
   --Button-primary-background-color-petroleum: #196572;
   --Button-secondary-background-color: #ffffff;
   --Button-primary-background-color-red: #e6243c;
+  --Button-primary-background-color-hover: #ffe000;
+  --Button-secondary-background-color-hover: #fff8e1;
 
   --Dropshadow-red: #93323e;
   --Dropshadow-petroleum: #29545b;
+  --Dropshadow-yellow: #998e3e;
 
   /* Streg */
   --SeperatorLine-color-yellow: #ffe000;
