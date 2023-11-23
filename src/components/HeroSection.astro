@@ -4,8 +4,15 @@ import Button from "./Button.astro";
 
 <section id="HeroSection">
   <div id="heroContentBox">
-    <Button />
-    <Button />
+    <h1>Velkommen til dansestudiet</h1>
+    <p>
+      Experimental Contemporary, Afro, House, Street Jazz, Commercial Femme, Hip Hop, Ballet, Moderne Dans, Smidighedstræning, House, Breakdance, Fusion Contemporary, Yoga, Waacking, Workshops m.m.<br />
+       Vi har mere end 50 danseklasser on ugen for alle aldre og niveauer!
+    </p>
+    <div class="buttons">
+      <Button buttonLabel="læs mere her" variant="primaryPetroleum" />
+      <Button buttonLabel="læs mere her" variant="secondaryPetroleum" />
+    </div>
   </div>
 </section>
 
@@ -16,9 +23,61 @@ import Button from "./Button.astro";
     background-image: url(/assets/images/hero_image.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
   }
   #heroContentBox {
     /* Dette kan ændres :) */
-    background-color: black;
+    background-color: rgba(10, 10, 10, 0.76);
+
+    width: 360px;
+    /* height: 100%; */
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  h1,
+  p {
+    color: var(--Text-color-white);
+  }
+
+  p {
+    display: none;
+  }
+  @media (min-width: 478px) {
+    #HeroSection {
+      justify-content: flex-end;
+      align-items: center;
+    }
+    #heroContentBox {
+      height: fit-content;
+      padding: 32px;
+      margin-bottom: 0;
+    }
+    p {
+      display: block;
+    }
+  }
+
+  @media (min-width: 600px) {
+    #heroContentBox {
+      width: 520px;
+    }
+  }
+
+  @media (min-width: 1041px) {
+    #heroContentBox {
+      width: 600px;
+      margin-right: 32px;
+    }
   }
 </style>
