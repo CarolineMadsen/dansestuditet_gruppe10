@@ -3,5 +3,27 @@ import Button from "./Button.astro";
 ---
 
 <section id="DanceStylesSection">
+<h3>
+  Hvilket danse- og træningstyper har vi?
+</h3>
+<h1>Experimental Contemporay</h1>
+<h3>
+  Vi har mere end 50 danseklasser om ugen for alle aldre og niveauer!</h3>
   <Button />
 </section>
+
+<style>
+  #DanceStylesSection {
+    height: 240px;
+    background-color: var(--background-color-lightblue);
+  text-align: center;  
+  justify-items: center;
+}
+
+  /* ----------- Desktop size ----------- */
+  @media (min-width: 600px) {
+    #DanceStylesSection { 
+      height: 610px;
+    }
+}
+</style>
