@@ -1,7 +1,99 @@
 ---
 import SectionHeadlineBanner from "./SectionHeadlineBanner.astro";
+import Button from "./Button.astro";
 ---
 
 <section id="LabSection">
   <SectionHeadlineBanner headline="Kommende Lab" type="Lab" />
+  <div class="grid2x1">
+    <div class="content">
+      <div class="text">
+        <h3>vittoria lasorella</h3>
+        <p>
+          “Movement LAB” er en koreografisk workshop, som går ud på, at lære at gå i dybden med længere koreografier samt at skabe materiale selv. Dette udføres ved fraser, som jeg vil instruere og koreografere med danserne og også give forskellige
+          opgaver til danserne igennem improvisation. Det vil være et trygt rum, hvor der er plads til forskellighed og mange kreative idéer. Fokus vil være på det koreografiske udtryk og hvordan vi bliver bedre til at performe og vigtigst, at føle
+          os trygge med det. Dette vil vi også lave forskellige øvelser til hvordan.”
+        </p>
+      </div>
+      <Button buttonLabel="læs mere her" variant="primaryPetroleum" />
+    </div>
+    <img src="/assets/images/Lab.png" alt="Billede af instruktør for denne måneds workshop: Anna Zacho" />
+  </div>
 </section>
+
+<style>
+  #LabSection {
+    width: 100vw;
+    display: flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .grid2x1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  img {
+    width: 100vw;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 20px 40px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  h3 {
+    color: var(--Text-color-petroleum);
+  }
+
+  p {
+    max-width: 580px;
+  }
+
+  /* ---------- Tablet format ---------- */
+  @media (min-width: 478px) {
+    .grid2x1 {
+      width: fit-content;
+    }
+    .content {
+      align-items: flex-start;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  /* ---------- Desktop format ---------- */
+  @media (min-width: 991px) {
+    #LabSection {
+      gap: 0;
+    }
+    .grid2x1 {
+      max-width: 1260px;
+      flex-direction: row;
+      align-items: flex-start;
+      margin: 40px 0;
+    }
+    .content {
+      width: 100%;
+      max-width: fit-content;
+      padding: 0px 20px 0 0;
+      gap: 32px;
+    }
+  }
+</style>
