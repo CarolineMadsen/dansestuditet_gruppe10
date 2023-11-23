@@ -1,5 +1,44 @@
 ---
+import "../styles/global.css";
 
 ---
 
-<section id="PortraitSection"></section>
+<section id="portraitsection">
+
+<h2>DANSE PORTRÆTTER</h2>
+
+<div id="portrait_videos">
+<video src="../assets/images/Mette_Portrait_Dance.mp4" width="400" controls></video>
+<video src="../assets/images/elvin-portrait-webpage.mp4" width="400" controls></video>
+<video src="../assets/images/Johanne-portrait-dance.mp4" width="400" controls></video>
+</div>
+
+
+</section>
+
+
+<style>
+    #portraitsection{
+    background-color: var(--background-color-secondary);
+padding: 40px;
+    }
+    
+    h2{
+    color: var(--Text-color-white);
+    text-align: center;
+    font-family: DansestudietDisplay1;
+    font-size: 39.06px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    }
+
+    #portrait_videos{
+      display: grid;
+      justify-content: center;
+      margin-top: 40px;
+      gap: 40px;
+    }
+
+    
+</style>
