@@ -1,14 +1,23 @@
 ---
-
+import Button from "./Button.astro";
 ---
 
 <section id="HeroSection">
-  <img src="/Billeder/TOP-scaled.jpg" alt="" />
+  <div id="heroContentBox">
+    <Button />
+    <Button />
+  </div>
 </section>
 
 <style>
-  .img {
-    max-height: 100vh;
-    max-width: 100wh;
+  #HeroSection {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/assets/images/hero_image.jpg);
+    background-size: cover;
+  }
+  #heroContentBox {
+    /* Dette kan ændres :) */
+    background-color: black;
   }
 </style>
