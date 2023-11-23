@@ -1,7 +1,24 @@
 ---
+import Button from "./Button.astro";
 import SectionHeadlineBanner from "./SectionHeadlineBanner.astro";
 ---
 
 <section id="MWsection">
   <SectionHeadlineBanner headline="Denne måneds Workshop" type="MW" />
+  <div class="grid2x1">
+    <img src="" alt="" />
+    <div class="content">
+      <h3></h3>
+      <p></p>
+      <div class="flex">
+        <Button buttonLabel="læs mere her" variant="primaryRed" />
+      </div>
+    </div>
+  </div>
 </section>
+
+<style>
+  .flex {
+    display: flex;
+  }
+</style>
