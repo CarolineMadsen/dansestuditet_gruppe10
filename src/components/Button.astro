@@ -1,0 +1,23 @@
+---
+const { variant } = Astro.props;
+---
+
+<button class={variant}>
+  <slot />
+</button>
+
+<style>
+  .button {
+    border-radius: 25px;
+    padding: 20px 10px 20px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .primary {
+    background-color: var(--Button-secondary-background-color);
+  }
+  .secondary {
+    background-color: var(--Button-secondary-background-color);
+  }
+</style>
