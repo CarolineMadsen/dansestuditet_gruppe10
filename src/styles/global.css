@@ -34,3 +34,22 @@
   /* Streg */
   --SeperatorLine-color-yellow: #ffe000;
 }
+
+@font-face {
+  /* font-family: "Display1-bold";
+  src: url(../styles/Fonte/DansestudietDisplay1-Bold.otf);
+  font-weight: bold;
+
+  font-family: "Display1";
+  src: url(../styles/Fonte/DansestudietDisplay1.otf);
+
+  font-family: "DansestudietSimple-Bold";
+  src: url(../styles/Fonte/DansestudietSimple-Bold.otf);
+  font-weight: bold;
+
+  font-family: "DansestudietSimple";
+  src: url(../styles/Fonte/DansestudietSimple.otf); */
+
+  font-family: "Promt";
+  src: url(../styles/Fonte/Prompt-Regular.ttf);
+}
