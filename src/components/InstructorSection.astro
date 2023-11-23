@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Button from "./Button.astro";
 ---
 
 <section id="InstructorSection">
@@ -108,22 +109,53 @@ import "../styles/global.css";
         <p class="undervisere_navn">Vittoria Lasorella</p>
     </div>
 </div>
+<div class="knap">
+<Button buttonLabel="Se underviserne her" variant="primaryPetroleum"></Button>
 <hr>
 </section>
 
 <style>
-   #InstructorSection {
-    background-color: var(--Text-color-white);
-
-   } 
 h2 {
-    color: var(--Text-color-petroleum);
-    text-align: center;
+color: var(--Text-color-petroleum);
+text-align: center;
 font-family: DansestudietDisplay1;
-font-size: 40px;
+font-size: 25px;
 font-style: normal;
 font-weight: 700;
-line-height: normal; 
+line height: normal; 
+}
+
+.undervisere_karusell {
+    display: flex;
+    overflow: scroll;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   
+}
+.undervisere_billede {
+    max-width: 150px;
+    max-width: 150px;
+}
+.undervisere_navn {
+    font-family: Promt;
+    font-size: 16px;
+    text-align: center;
+}
+
+hr {
+    height: 2px;
+    border-width: 0;
+    color: var(--SeperatorLine-color-yellow);
+    background-color: var(--SeperatorLine-color-yellow);
+} */
+
+/* ----------- Desktop size ----------- */
+  @media (min-width: 600px) {
+    h2 {
+    font-size: 40px;
 }
 
 .undervisere_karusell {
@@ -153,5 +185,5 @@ hr {
     background-color: var(--SeperatorLine-color-yellow);
 }
 
-
+   } 
 </style>
