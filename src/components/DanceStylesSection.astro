@@ -1,7 +1,94 @@
 ---
+import "../styles/global.css";
 import Button from "./Button.astro";
 ---
 
 <section id="DanceStylesSection">
-  <Button />
+  <hr />
+  <div class="DanceStyle-Content">
+    <h3>Hvilket danse- og træningstyper har vi?</h3>
+    <div class="danse_navne">
+      <h1>Experimental Contemporay</h1>
+      <h1>Afro</h1>
+      <h1>House</h1>
+      <h1>Street Jazz</h1>
+      <h1>Commercial Femme</h1>
+      <h1>Hip Hop</h1>
+      <h1>Ballet</h1>
+      <h1>Moderne Dans</h1>
+      <h1>Smidighedstræning</h1>
+      <h1>Breakdance</h1>
+      <h1>Fusion Contemporary</h1>
+      <h1>Yoga</h1>
+      <h1>Waacking</h1>
+      <h1>Workshops m.m</h1>
+    </div>
+    <h3>Vi har mere end 50 danseklasser om ugen for alle aldre og niveauer!</h3>
+    <div class="knap">
+      <Button buttonLabel="Se underviserne her" variant="primaryPetroleum" />
+    </div>
+  </div>
 </section>
+
+<style>
+  #DanceStylesSection {
+    height: 240px;
+    background-color: var(--Background-color-secondary-blue);
+    text-align: center;
+    justify-items: center;
+  }
+
+  .DanceStyle-Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+  }
+  .danse_navne {
+    display: flex;
+    overflow: scroll;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 10px;
+  }
+
+  h1 {
+    font-family: DansestudietDisplay1;
+    font-size: 24px;
+    line-height: 80px;
+    color: var(--Text-color-petroleum);
+  }
+
+  h3 {
+    color: white;
+    font-family: "Promt";
+    margin: 0 30px;
+  }
+  hr {
+    height: 2px;
+    border-width: 0;
+    color: var(--SeperatorLine-color-yellow);
+    background-color: var(--SeperatorLine-color-yellow);
+  }
+  /* ----------- Desktop size ----------- */
+  @media (min-width: 600px) {
+    .danse_navne {
+      height: 80px;
+      gap: 20px;
+    }
+    h1 {
+      font-family: DansestudietDisplay1;
+      font-size: 64px;
+      color: var(--Text-color-petroleum);
+    }
+
+    h3 {
+      color: white;
+      font-family: "Promt";
+      font-size: 1 rem;
+    }
+  }
+</style>
