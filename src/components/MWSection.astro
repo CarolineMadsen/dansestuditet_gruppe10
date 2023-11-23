@@ -6,19 +6,100 @@ import SectionHeadlineBanner from "./SectionHeadlineBanner.astro";
 <section id="MWsection">
   <SectionHeadlineBanner headline="Denne måneds Workshop" type="MW" />
   <div class="grid2x1">
-    <img src="" alt="" />
+    <img src="/assets/images/MW.png" alt="Billede af instruktør for denne måneds workshop: Anna Zacho" />
     <div class="content">
-      <h3></h3>
-      <p></p>
-      <div class="flex">
-        <Button buttonLabel="læs mere her" variant="primaryRed" />
+      <div class="text">
+        <h3>Anna zacho</h3>
+        <p>
+          Anna Zacho, medstifter af “The Edge Dance Space”, kommer hjem fra London for at give en Commercial Performance workshop med lækker energi. <br /><br />
+           I denne workshop kommer vi til at dykke ned i kommercielle redskaber, der styrker performance og udtryk i din dans. Vi arbejder i et trygt og konstruktivt rum med plads til at udforske og skubbe egne grænser og lege med det, vi alle elsker
+          – at danse. Lad os danse sammen til den sidste MW i år.
+        </p>
       </div>
+      <Button buttonLabel="læs mere her" variant="primaryRed" />
     </div>
   </div>
 </section>
 
 <style>
-  .flex {
+  #MWsection {
+    width: 100vw;
     display: flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .grid2x1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  img {
+    width: 100vw;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 20px 40px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  h3 {
+    color: var(--Text-color-red);
+  }
+
+  p {
+    max-width: 580px;
+  }
+
+  /* ---------- Tablet format ---------- */
+  @media (min-width: 478px) {
+    .grid2x1 {
+      width: fit-content;
+    }
+    .content {
+      align-items: flex-start;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  /* ---------- Desktop format ---------- */
+  @media (min-width: 991px) {
+    #MWsection {
+      gap: 0;
+    }
+    .grid2x1 {
+      max-width: 1260px;
+      flex-direction: row;
+      align-items: flex-start;
+      margin: 40px 0;
+    }
+    .content {
+      width: 100%;
+      max-width: fit-content;
+      padding: 0px 20px 0 0;
+      gap: 32px;
+    }
+  }
+
+  @media (min-width: 1041px) {
+    .content {
+      padding: 0;
+    }
   }
 </style>
