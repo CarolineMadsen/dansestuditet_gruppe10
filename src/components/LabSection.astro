@@ -6,6 +6,7 @@ import Button from "./Button.astro";
 <section id="LabSection">
   <SectionHeadlineBanner headline="Kommende Lab" type="Lab" />
   <div class="grid2x1">
+    <img src="/assets/images/Lab.png" alt="Billede af instruktør for denne måneds workshop: Anna Zacho" />
     <div class="content">
       <div class="text">
         <h3>vittoria lasorella</h3>
@@ -17,7 +18,6 @@ import Button from "./Button.astro";
       </div>
       <Button buttonLabel="læs mere her" variant="primaryPetroleum" />
     </div>
-    <img src="/assets/images/Lab.png" alt="Billede af instruktør for denne måneds workshop: Anna Zacho" />
   </div>
 </section>
 
@@ -84,16 +84,27 @@ import Button from "./Button.astro";
       gap: 0;
     }
     .grid2x1 {
-      max-width: 1260px;
-      flex-direction: row;
-      align-items: flex-start;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 1040px;
       margin: 40px 0;
+    }
+    img {
+      grid-area: 1/2/1/2;
     }
     .content {
       width: 100%;
       max-width: fit-content;
-      padding: 0px 20px 0 0;
+      padding: 0 0 0 20px;
       gap: 32px;
+      grid-column: 2/3/1/2;
+    }
+  }
+
+  @media (min-width: 1041px) {
+    .content {
+      height: -webkit-fill-available;
+      padding: 0;
     }
   }
 </style>
