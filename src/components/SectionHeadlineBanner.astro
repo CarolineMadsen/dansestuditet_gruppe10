@@ -1,0 +1,32 @@
+---
+const { headline } = Astro.props;
+---
+
+<div id="SectionHeadlineBanner">
+  <h2>{headline}</h2>
+  <!-- Denne måneds Workshop -->
+</div>
+
+<style>
+  #SectionHeadlineBanner {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+
+    background: #efefef;
+  }
+
+  h2 {
+    color: #e6243c;
+    text-align: center;
+
+    /* Overskrifter */
+    font-family: DansestudietDisplay1;
+    font-size: 39.06px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+</style>
