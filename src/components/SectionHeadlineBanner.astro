@@ -21,21 +21,30 @@ const { headline, type } = Astro.props;
 
     /* Overskrifter */
     font-family: DansestudietDisplay1;
-    font-size: 39.06px;
+    font-size: 27.65px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
 
+  /* ----------- Desktop size ----------- */
+  @media (min-width: 600px) {
+    h2 {
+      font-size: 39.06px;
+    }
+  }
+
+  /* ---------- Variants ---------- */
+  /* månedens workshop */
   [background-variant="MW"] {
     background: var(--background-color-gray);
   }
-  [background-variant="Lab"] {
-    background: var(--background-color-lightblue);
-  }
-
   [headline-variant="MW"] {
     color: var(--Text-color-red);
+  }
+  /* lab */
+  [background-variant="Lab"] {
+    background: var(--background-color-lightblue);
   }
   [headline-variant="Lab"] {
     color: var(--Text-color-petroleum);
