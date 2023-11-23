@@ -1,21 +1,22 @@
 ---
-import Button from "../components/Button.astro";
-
-import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroSection from "../components/HeroSection.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Knap</h1>
-		
-		<Button variant='primary'>Primlær</Button>
-		<Button variant='secondary'>Sekundær</Button>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+
+  <BaseLayout>
+    <main>
+      <HeroSection />
+    </main>
+  </BaseLayout>
+
+
 </html>
