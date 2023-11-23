@@ -53,3 +53,18 @@
   font-family: "Promt";
   src: url(../styles/Fonte/Prompt-Regular.ttf);
 }
+
+/* Fonte */
+.h2 {
+  text-align: center;
+  font-family: DansestudietDisplay1;
+  font-size: 39.06px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.p {
+  font-size: 16px;
+  font-family: "Promt";
+}
