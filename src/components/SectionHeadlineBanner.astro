@@ -1,9 +1,9 @@
 ---
-const { headline } = Astro.props;
+const { headline, type } = Astro.props;
 ---
 
-<div id="SectionHeadlineBanner">
-  <h2>{headline}</h2>
+<div id="SectionHeadlineBanner" background-variant={type}>
+  <h2 headline-variant={type}>{headline}</h2>
   <!-- Denne måneds Workshop -->
 </div>
 
@@ -14,12 +14,9 @@ const { headline } = Astro.props;
     justify-content: center;
     align-items: center;
     align-self: stretch;
-
-    background: #efefef;
   }
 
   h2 {
-    color: #e6243c;
     text-align: center;
 
     /* Overskrifter */
@@ -28,5 +25,19 @@ const { headline } = Astro.props;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+  }
+
+  [background-variant="MW"] {
+    background: var(--background-color-gray);
+  }
+  [background-variant="Lab"] {
+    background: var(--background-color-lightblue);
+  }
+
+  [headline-variant="MW"] {
+    color: var(--Text-color-red);
+  }
+  [headline-variant="Lab"] {
+    color: var(--Text-color-petroleum);
   }
 </style>
