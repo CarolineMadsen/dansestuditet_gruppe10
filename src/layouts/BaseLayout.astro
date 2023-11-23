@@ -3,16 +3,39 @@ import "../styles/global.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
- 	<body>
-		<header></header>
-    	<slot />
-    	<footer></footer>
-  	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <header>
+      <img src="/assets/Logo_cirkel_stor.svg" alt="" id="logo" />
+    </header>
+    <slot />
+    <footer></footer>
+  </body>
 </html>
+
+<style>
+  header {
+    background-color: var(--background-color-petroleum);
+    height: 82px;
+    width: 100vw;
+    position: absolute;
+  }
+
+  #logo {
+    aspect-ratio: 1/1;
+    width: 110px;
+    margin: 18px 0 0 18px;
+  }
+
+  footer {
+    background-color: var(--background-color-petroleum);
+    height: 82px;
+    width: 100vw;
+  }
+</style>
