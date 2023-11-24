@@ -19,3 +19,8 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# ignorer videofilerne
+public/assets/videos/ElvinPortrait.mp4
+public/assets/videos/JohannePortrait.mp4
+public/assets/videos/MettePortrait.mp4
