@@ -1,44 +1,62 @@
 ---
 import "../styles/global.css";
-
 ---
 
 <section id="portraitsection">
-
-<h2>DANSE PORTRÆTTER</h2>
-
-<div id="portrait_videos">
-<video src="../assets/images/Mette_Portrait_Dance.mp4" width="400" controls></video>
-<video src="../assets/images/elvin-portrait-webpage.mp4" width="400" controls></video>
-<video src="../assets/images/Johanne-portrait-dance.mp4" width="400" controls></video>
-</div>
-
-
+  <h2>DANSE PORTRÆTTER</h2>
+  <div id="portrait_videos">
+    <video src="../assets/images/mette.mp4" width="400" controls></video>
+    <video
+      src="../assets/images/elvin-portrait-webpage.mp4"
+      width="400"
+      controls></video>
+    <video src="../assets/images/Johanne-web.mp4" width="400" controls></video>
+  </div>
 </section>
-
-
 <style>
-    #portraitsection{
-    background-color: var(--background-color-secondary);
-padding: 40px;
+  /* mobileview */
+  @media (max-width: 800px) {
+    #portraitsection {
+      background-color: var(--background-color-secondary);
+      padding: 40px;
+      overflow: hidden;
     }
-    
-    h2{
-    color: var(--Text-color-white);
-    text-align: center;
-    font-family: DansestudietDisplay1;
-    font-size: 39.06px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    h2 {
+      color: var(--Text-color-white);
+      text-align: center;
+      font-family: DansestudietDisplay1;
+      font-size: 39.06px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
     }
-
-    #portrait_videos{
+    #portrait_videos {
       display: grid;
       justify-content: center;
       margin-top: 40px;
       gap: 40px;
     }
-
-    
+  } /* web */
+  @media (min-width: 800px) {
+    #portraitsection {
+      background-color: var(--background-color-secondary);
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1fr, 1fr, 1fr;
+      justify-content: center;
+      justify-content: center;
+      margin-top: 40px;
+      gap: 40px;
+      overflow: hidden;
+    }
+    h2 {
+      color: var(--Text-color-white);
+      text-align: center;
+      font-family: DansestudietDisplay1;
+      font-size: 39.06px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
 </style>
